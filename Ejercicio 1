@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Hipotenusa</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar las longitudes de los catetos
+        var cateto1 = parseFloat(prompt("Ingresa la longitud del primer cateto:"));
+        var cateto2 = parseFloat(prompt("Ingresa la longitud del segundo cateto:"));
+
+        // Paso 1: Calcular el cuadrado de cateto1
+        var cateto1_cuadrado = Math.pow(cateto1, 2);
+
+        // Paso 2: Calcular el cuadrado de cateto2
+        var cateto2_cuadrado = Math.pow(cateto2, 2);
+
+        // Paso 3: Sumar los cuadrados de los catetos
+        var suma_cuadrados = cateto1_cuadrado + cateto2_cuadrado;
+
+        // Paso 4: Calcular la raíz cuadrada de la suma
+        var hipotenusa = Math.sqrt(suma_cuadrados);
+
+        // Mostrar el resultado utilizando alert
+        alert("La longitud de la hipotenusa es: " + hipotenusa);
+    </script>
+</body>
+</html>

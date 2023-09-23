@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Área de Trapecio</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar las longitudes de las bases y la altura
+        var B = parseFloat(prompt("Ingresa la longitud de la base mayor:"));
+        var b = parseFloat(prompt("Ingresa la longitud de la base menor:"));
+        var H = parseFloat(prompt("Ingresa la altura del trapecio:"));
+
+        // Paso 1: Sumar la base mayor (B) y la base menor (b).
+        var suma_bases = B + b;
+
+        // Paso 2: Multiplicar la suma de las bases por la altura (H).
+        var producto = suma_bases * H;
+
+        // Paso 3: Dividir el producto entre 2.
+        var area_trapecio = producto / 2;
+
+        // Mostrar el resultado utilizando alert
+        alert("El área del trapecio es: " + area_trapecio);
+    </script>
+</body>
+</html>

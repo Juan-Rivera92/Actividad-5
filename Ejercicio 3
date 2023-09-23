@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Comisiones</title>
+</head>
+<body>
+    <script>
+        // Ingresar el sueldo base del vendedor.
+        var sueldoBase = parseFloat(prompt("Ingresa el sueldo base del vendedor:"));
+
+        // Ingresar los montos de las tres ventas.
+        var venta1 = parseFloat(prompt("Ingresa el monto de la primera venta:"));
+        var venta2 = parseFloat(prompt("Ingresa el monto de la segunda venta:"));
+        var venta3 = parseFloat(prompt("Ingresa el monto de la tercera venta:"));
+
+        // Calcular la comisión total (10% de la suma de las ventas).
+        var comisionTotal = (venta1 + venta2 + venta3) * 0.10;
+
+        // Calcular el salario total (sueldo base + comisión total).
+        var salarioTotal = sueldoBase + comisionTotal;
+
+        // Mostrar el monto de la comisión total y el salario total.
+        alert("El monto total de comisiones es: " + comisionTotal.toFixed(2));
+        alert("El salario total en el mes es: " + salarioTotal.toFixed(2));
+    </script>
+</body>
+</html>

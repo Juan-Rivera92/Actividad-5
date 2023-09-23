@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado de Nota</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar una nota
+        var nota = parseFloat(prompt("Ingresa tu nota (0 - 10):"));
+
+        // Verificar si la nota está dentro del rango válido
+        if (nota >= 0 && nota <= 10) {
+            // Determinar el resultado según la nota
+            var resultado;
+
+            if (nota >= 9) {
+                resultado = "A";
+            } else if (nota >= 8) {
+                resultado = "B";
+            } else if (nota >= 7) {
+                resultado = "C";
+            } else if (nota >= 6) {
+                resultado = "D";
+            } else {
+                resultado = "E";
+            }
+
+            // Mostrar el resultado
+            alert("Tu resultado es: " + resultado);
+        } else {
+            // Si la nota no está en el rango válido, mostrar un mensaje de error
+            alert("Nota no válida. Debe estar entre 0 y 10.");
+        }
+    </script>
+</body>
+</html>

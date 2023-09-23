@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Compra de Libros</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar el precio del libro y la cantidad de libros
+        var precioLibro = parseFloat(prompt("Ingresa el precio del libro:"));
+        var cantidadLibros = parseInt(prompt("Ingresa la cantidad de libros:"));
+
+        // Inicializar el total a pagar
+        var totalAPagar = precioLibro * cantidadLibros;
+
+        // Calcular el descuento según la cantidad de libros
+        if (cantidadLibros >= 3 && cantidadLibros <= 10) {
+            // Aplicar descuento del 3% a partir de tres libros
+            totalAPagar *= 0.97;
+        } else if (cantidadLibros > 10) {
+            // Aplicar descuento del 10% si son más de diez libros
+            totalAPagar *= 0.90;
+        }
+
+        // Mostrar el total a pagar con descuento
+        alert("El total a pagar es: $" + totalAPagar.toFixed(2));
+    </script>
+</body>
+</html>

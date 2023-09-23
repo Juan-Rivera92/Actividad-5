@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Multiplicación</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar los 4 números
+        var numero1 = parseFloat(prompt("Ingresa el primer número:"));
+        var numero2 = parseFloat(prompt("Ingresa el segundo número:"));
+        var numero3 = parseFloat(prompt("Ingresa el tercer número:"));
+        var numero4 = parseFloat(prompt("Ingresa el cuarto número:"));
+
+        // Calcular la multiplicación de los números
+        var resultado = numero1 * numero2 * numero3 * numero4;
+
+        // Mostrar el resultado
+        alert("El resultado de la multiplicación es: " + resultado);
+    </script>
+</body>
+</html>

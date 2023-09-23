@@ -20,8 +20,8 @@
             // Obtener el nombre del mes correspondiente
             var nombreMes = meses[numero - 1];
 
-            // Mostrar el nombre del mes
-            alert("El número " + numero + " corresponde a " + nombreMes + ".");
+            // Mostrar el resultado en el formato deseado
+            alert(nombreMes + ": " + numero);
         } else {
             // Si el número no está en el rango válido, mostrar un mensaje de error
             alert("Número fuera de rango. Debe ser entre 1 y 12.");
@@ -29,3 +29,4 @@
     </script>
 </body>
 </html>
+

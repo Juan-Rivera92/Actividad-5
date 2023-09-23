@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Estacionamiento</title>
+</head>
+<body>
+    <script>
+        // Ingresar el tiempo en horas.
+        var tiempoEnHoras = parseFloat(prompt("Ingresa el tiempo en horas de estacionamiento:"));
+
+        // Tarifa por hora de estacionamiento.
+        var tarifaPorHora = 1.00;
+
+        // Calcular el monto a pagar.
+        var montoAPagar = tiempoEnHoras * tarifaPorHora;
+
+        // Mostrar el monto a pagar.
+        alert("El monto a pagar por " + tiempoEnHoras + " horas de estacionamiento es: $" + montoAPagar.toFixed(2));
+    </script>
+</body>
+</html>

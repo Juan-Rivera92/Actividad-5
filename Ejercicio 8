@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encontrar el Mayor</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar los tres números enteros
+        var numero1 = parseInt(prompt("Ingresa el primer número:"));
+        var numero2 = parseInt(prompt("Ingresa el segundo número:"));
+        var numero3 = parseInt(prompt("Ingresa el tercer número:"));
+
+        // Inicializar una variable para almacenar el número mayor
+        var numeroMayor;
+
+        // Comparar los números para encontrar el mayor
+        if (numero1 >= numero2 && numero1 >= numero3) {
+            numeroMayor = numero1;
+        } else if (numero2 >= numero1 && numero2 >= numero3) {
+            numeroMayor = numero2;
+        } else {
+            numeroMayor = numero3;
+        }
+
+        // Mostrar el número mayor
+        alert("El número mayor es: " + numeroMayor);
+    </script>
+</body>
+</html>

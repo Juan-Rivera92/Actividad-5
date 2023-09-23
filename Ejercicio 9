@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convertir Número a Mes</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar un número entre 1 y 12
+        var numero = parseInt(prompt("Ingresa un número entre 1 y 12:"));
+
+        // Declarar un array con los nombres de los meses
+        var meses = [
+            "Enero", "Febrero", "Marzo", "Abril", 
+            "Mayo", "Junio", "Julio", "Agosto", 
+            "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ];
+
+        // Verificar si el número está dentro del rango válido
+        if (numero >= 1 && numero <= 12) {
+            // Obtener el nombre del mes correspondiente
+            var nombreMes = meses[numero - 1];
+
+            // Mostrar el nombre del mes
+            alert("El número " + numero + " corresponde a " + nombreMes + ".");
+        } else {
+            // Si el número no está en el rango válido, mostrar un mensaje de error
+            alert("Número fuera de rango. Debe ser entre 1 y 12.");
+        }
+    </script>
+</body>
+</html>

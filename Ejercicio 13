@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Descuento de Compra</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar el monto de compra
+        var montoCompra = parseFloat(prompt("Ingresa el monto de compra:"));
+
+        // Inicializar el porcentaje de descuento en 0%
+        var porcentajeDescuento = 0;
+
+        // Calcular el porcentaje de descuento según el monto de compra
+        if (montoCompra >= 500.01 && montoCompra <= 1000) {
+            porcentajeDescuento = 5;
+        } else if (montoCompra >= 1000.01 && montoCompra <= 7000) {
+            porcentajeDescuento = 11;
+        } else if (montoCompra >= 7000.01 && montoCompra <= 15000) {
+            porcentajeDescuento = 18;
+        } else if (montoCompra >= 15000.01) {
+            porcentajeDescuento = 25;
+        }
+
+        // Calcular el monto del descuento
+        var descuento = (porcentajeDescuento / 100) * montoCompra;
+
+        // Mostrar el porcentaje de descuento y el monto del descuento
+        alert("Porcentaje de descuento: " + porcentajeDescuento + "%");
+        alert("Monto del descuento: $" + descuento.toFixed(2));
+    </script>
+</body>
+</html>

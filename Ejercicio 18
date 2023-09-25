@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Análisis de Números en un Vector</title>
+</head>
+<body>
+    <script>
+        // Inicializar un vector para almacenar los números
+        let numeros = [];
+
+        // Solicitar al usuario ingresar 20 números enteros
+        for (let i = 1; i <= 20; i++) {
+            let numero = parseInt(prompt("Ingresa el número " + i + ":"));
+            numeros.push(numero);
+        }
+
+        // Encontrar el mayor, el menor y calcular el promedio
+        let mayor = numeros[0];
+        let menor = numeros[0];
+        let suma = 0;
+
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] > mayor) {
+                mayor = numeros[i];
+            }
+
+            if (numeros[i] < menor) {
+                menor = numeros[i];
+            }
+
+            suma += numeros[i];
+        }
+
+        let promedio = suma / numeros.length;
+
+        // Mostrar los resultados
+        alert("Números ingresados: " + numeros.join(", "));
+        alert("El mayor número es: " + mayor);
+        alert("El menor número es: " + menor);
+        alert("El promedio de los números es: " + promedio.toFixed(2));
+    </script>
+</body>
+</html>

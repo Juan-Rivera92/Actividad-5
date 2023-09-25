@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Salario</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar las horas trabajadas y el valor por hora
+        let horasTrabajadas = parseFloat(prompt("Ingresa las horas trabajadas:"));
+        let valorPorHora = parseFloat(prompt("Ingresa el valor por hora:"));
+
+        // Calcular el salario bruto
+        let salarioBruto = horasTrabajadas * valorPorHora;
+
+        // Calcular el descuento de seguridad social
+        let descuento;
+
+        if (horasTrabajadas >= 40) {
+            // Descuento del 9.45% para quienes laboran 40 horas o más
+            descuento = salarioBruto * 0.0945;
+        } else {
+            // Descuento del 15% para quienes laboran menos de 40 horas
+            descuento = salarioBruto * 0.15;
+        }
+
+        // Calcular el salario neto
+        let salarioNeto = salarioBruto - descuento;
+
+        // Mostrar el salario bruto, el descuento y el salario neto
+        alert("Salario Bruto: $" + salarioBruto.toFixed(2));
+        alert("Descuento de Seguridad Social: $" + descuento.toFixed(2));
+        alert("Salario Neto: $" + salarioNeto.toFixed(2));
+    </script>
+</body>
+</html>

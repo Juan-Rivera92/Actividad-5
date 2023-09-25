@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tipo de Ángulo</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar un ángulo
+        let angulo = parseFloat(prompt("Ingresa un ángulo (en grados):"));
+
+        // Determinar el tipo de ángulo según las condiciones
+        let tipoAngulo;
+
+        if (angulo < 90) {
+            tipoAngulo = "Ángulo agudo";
+        } else if (angulo === 90) {
+            tipoAngulo = "Ángulo recto";
+        } else if (angulo > 90 && angulo < 180) {
+            tipoAngulo = "Ángulo obtuso";
+        } else if (angulo === 180) {
+            tipoAngulo = "Ángulo llano";
+        } else {
+            tipoAngulo = "Ángulo no categorizado";
+        }
+
+        // Mostrar el tipo de ángulo
+        alert("El ángulo de " + angulo + " grados es un " + tipoAngulo + ".");
+    </script>
+</body>
+</html>

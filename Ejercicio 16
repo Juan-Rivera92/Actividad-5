@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Promedio de Notas</title>
+</head>
+<body>
+    <script>
+        // Inicializar una variable para almacenar la suma de las notas
+        let sumaNotas = 0;
+
+        // Solicitar al usuario ingresar 10 notas
+        for (let i = 1; i <= 10; i++) {
+            let nota = parseFloat(prompt("Ingresa la nota " + i + ":"));
+            sumaNotas += nota;
+        }
+
+        // Calcular el promedio de las notas
+        let promedio = sumaNotas / 10;
+
+        // Mostrar el promedio
+        alert("El promedio de las 10 notas es: " + promedio.toFixed(2));
+    </script>
+</body>
+</html>

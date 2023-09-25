@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Factorial</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar un número
+        let numero = parseInt(prompt("Ingresa un número para calcular su factorial:"));
+
+        // Inicializar una variable para almacenar el resultado del factorial
+        let factorial = 1;
+
+        // Calcular el factorial del número
+        for (let i = 1; i <= numero; i++) {
+            factorial *= i;
+        }
+
+        // Mostrar el resultado del factorial
+        alert("El factorial de " + numero + " es: " + factorial);
+    </script>
+</body>
+</html>

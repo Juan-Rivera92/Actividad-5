@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suma de Elementos en un Vector</title>
+</head>
+<body>
+    <script>
+        // Inicializar un vector para almacenar los números
+        let numeros = [];
+
+        // Solicitar al usuario ingresar 10 números
+        for (let i = 1; i <= 10; i++) {
+            let numero = parseFloat(prompt("Ingresa el número " + i + ":"));
+            numeros.push(numero);
+        }
+
+        // Calcular la suma de los elementos del vector
+        let suma = 0;
+
+        for (let i = 0; i < numeros.length; i++) {
+            suma += numeros[i];
+        }
+
+        // Mostrar la suma de los elementos
+        alert("La suma de los elementos del vector es: " + suma);
+    </script>
+</body>
+</html>

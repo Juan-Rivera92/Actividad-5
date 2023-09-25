@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Almacenar Números Pares en un Vector</title>
+</head>
+<body>
+    <script>
+        // Inicializar un vector de 5 elementos para almacenar los números pares
+        let numerosPares = [];
+        let contador = 0;
+
+        // Solicitar al usuario ingresar números pares hasta que el vector esté lleno
+        while (contador < 5) {
+            let numero = parseInt(prompt("Ingresa un número:"));
+
+            // Verificar si el número es par
+            if (numero % 2 === 0) {
+                numerosPares.push(numero);
+                contador++;
+            }
+        }
+
+        // Mostrar el vector de números pares
+        alert("Vector de números pares: " + numerosPares.join(", "));
+    </script>
+</body>
+</html>
